@@ -138,21 +138,16 @@ function buscoInterseccion(arreglo1, arreglo2) {
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
-  let arrMasGrande = [];
-  let numerosRepetidos = []; {
-    if (arreglo1.length > arreglo2.length) {
-      arrMasGrande === arreglo1;
-    } else
-      arrMasGrande === arreglo2;
-  } {
 
-    for (let i = 0; i < arrMasGrande.length; i++) {
-      if (arreglo2.includes(arreglo1[i])) {
-        numerosRepetidos += arreglo1[i];
+  let sameNumbers = []
+  for (let i = 0; i < arreglo1.length; i++) {
+    for (let k = 0; k < arreglo2.length; k++) {
+      if (arreglo1[i] === arreglo2[j]) {
+        sameNumbers.push(arreglo2[k]);
       }
-      return numerosRepetidos;
     }
   }
+  return sameNumbers;
 }
 
 //no he podido con este último, no sé por qué me da undefined. 
