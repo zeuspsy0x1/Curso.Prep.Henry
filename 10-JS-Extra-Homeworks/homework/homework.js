@@ -142,7 +142,7 @@ function buscoInterseccion(arreglo1, arreglo2) {
   let sameNumbers = []
   for (let i = 0; i < arreglo1.length; i++) {
     for (let k = 0; k < arreglo2.length; k++) {
-      if (arreglo1[i] === arreglo2[j]) {
+      if (arreglo1[i] === arreglo2[k]) {
         sameNumbers.push(arreglo2[k]);
       }
     }
